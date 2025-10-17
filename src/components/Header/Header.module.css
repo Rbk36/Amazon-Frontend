@@ -1,0 +1,172 @@
+/* HEADER CONTAINER */
+.header_container {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* LOGO SECTION */
+.logo_container {
+  display: flex;
+  align-items: center;
+}
+
+.logo_container p,
+.logo_container span {
+  color: white;
+}
+
+/* SEARCH BAR */
+.search {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+  margin: 0 10px;
+  background-color: white;
+}
+.search_icon {
+  background-color: #febd69;
+  padding: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search input {
+  width: 100%;
+  border-radius: 7px;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.search select {
+  border: none;
+  border-radius: 7px;
+  padding: 5px;
+  background-color: #f3f3f3;
+}
+.fixed {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ICON COLOR */
+.rating svg {
+  color: #faaf00;
+}
+.delivery p {
+  font-size: 14px;
+  margin: 0;
+}
+.location_icon {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+/* FLAG & LANGUAGE */
+.flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.flag select {
+  background-color: black;
+  color: white;
+  margin-left: 3px;
+  border: none;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+/* SIGN-IN & ORDERS */
+.signin,
+.orders {
+  padding-left:20px;
+  color:white;
+  
+}
+
+.signin p,
+.orders p {
+ font-size: 13px;
+  margin: 0;
+}
+
+/* CART */
+.cart {
+  position: relative;
+  margin-left: 15px;
+  padding: 7px;
+}
+
+.cart span {
+  position: absolute;
+  top: -2px;
+  left: 22px;
+  color: #f08804;
+  background-color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* HOVER EFFECTS */
+.flag a:hover,
+.logo_container a:hover,
+.cart a:hover,
+.delivery:hover {
+  border: 2px solid #fff;
+  padding: 5px;
+}
+
+/* LOWER CONTAINER */
+.lower_container{
+     background-color: rgb(10, 34, 33);
+     padding:13px
+}
+.lower_container ul,
+.lower_container p {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+ 
+}
+.lower_container li{
+  font-size: 20px;
+color: #f3f3f3;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 578px) {
+  .header_container {
+    flex-direction: column !important;
+    height: auto;
+  }
+
+  .search {
+    margin: 10px 0;
+  }
+
+  .lower_container ul li:not(:first-child) {
+    display: none;
+  }
+
+  .language {
+    display: none;
+  }
+}
